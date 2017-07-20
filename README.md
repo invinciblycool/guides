@@ -49,14 +49,19 @@ Make sure to maintain your local fork going forward so it stays up-to-date with 
 
 We're happy to help answer any questions you may have and give you feedback on your articles in the [contributors chat room](https://gitter.im/freecodecamp/contributors).
 
-Finally, if you want to run a version of the Guide repository locally, follow these commands:
+Finally, if you want to run a version of the Guide repository locally, follow these steps:
 
+1. Fork this repository
+2. Ensure you have the `yarn` package manager installed, `npm install -g yarn`
+3. 
 ```sh
-git clone https://github.com/freeCodeCamp/guides.git
+git clone https://github.com/<YOUR GITHUB USERNAME>/guides.git
 cd guides
-npm i
+yarn install
 npm run dev
 ```
+Netlify builds our site with `yarn`. These steps help us reduce build errors that occur with missing packages.
+
 ## Article style guide
 
 We've written this guide to writing guide articles to help you get started contributing.
